@@ -1,9 +1,17 @@
 # TechMan
-Repositório do projeto da TechMan 
+Repositório do projeto da TechMan
 
-#Projeto TechMan
-    *Para iniciar o projeto, acesse no terminal a pasta backend:
-        .Use "npm init"
-        .Inicie o prisma usando "prisma migrate dev --name init"
-        .Rode o programa com "nodemon"
-    *Abra a pasta de frontEnd, acesse login e abra com o google    
+## Projeto TechMan
+
+Para iniciar o projeto, siga as etapas abaixo:
+
+1. Acesse a pasta backend no terminal:
+   - Execute o comando "npm init" para iniciar o projeto.
+   - Inicie o Prisma usando o comando "prisma migrate dev --name init".
+   - Execute o programa com o comando "nodemon".
+
+2. Abra a pasta frontend:
+   - Acesse a pasta de login.
+   - Abra o arquivo com o Google.
+
+Certifique-se de seguir essas etapas na ordem correta para iniciar e executar o projeto TechMan.
