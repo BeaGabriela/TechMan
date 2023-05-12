@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    background-color: #44babc8a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    overflow-y: scroll;
+    margin-top: 8vh;
+}
+
+header>div {
+    display: flex;
+    margin-right: 3vw;
+    align-items: center;
+}
+
+h2 {
+    color: #35797d;
+    font-size: 12pt;
+}
+
+#imgSair {
+    margin-left: 3vw;
+    height: 3vh;
+}
+
+body {
+    background-color: #cce2e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 10pt;
+}
+
+#logo{
+    height: 6vh;
+    margin-left: 1vw;
+}
+#novoEquipamento{
+    cursor: pointer;
+}
+
+.equipamentos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65vw;
+    margin-top: 3vh;
+
+}
+
+.equipamentos>div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 1vw;
+
+}
+
+.equipamentos>div>p {
+    word-wrap: break-word;
+    margin: 1vh;
+}
+
+#img {
+    height: 18vh;
+    border: 1px solid #44babc;
+}
+
+img {
+    height: 3vh;
+    cursor: pointer;
+}
+
+.modalExclusão,
+.cadastrarEquipamento {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #cce2e2c6;
+}
+
+.modalExclusão>div,
+.modalCadastrarComentario>div {
+    position: absolute;
+    height: 25vh;
+    width: 38vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    top: 25vh;
+    left: 15vw;
+}
+
+#fechar,
+#fecharComentario {
+    position: absolute;
+    left: 30vw;
+    top: 6vh;
+    cursor: pointer;
+}
+
+.comentariosV {
+    width: 30vw;
+    padding: 1vh;
+    margin-left: 11vw;
+    border-bottom: 1px solid #000;
+    margin-top: -2vh;
+}
+
+#comentario {
+    margin-left: 2vw;
+    margin-top: 0.5vh;
+}
+
+#comentarioTexto {
+    text-align: center;
+    font-size: 12pt;
+    margin-right: 12vw;
+    /* position: static; */
+    /* bottom: 10vh; */
+}
+
+#perfil {
+    font-size: 12pt;
+}
+
+#excluir {
+    padding: 10px;
+    width: 5vw;
+    background-color: red;
+    border: none;
+    color: #fff;
+    margin-right: 25vw;
+    border-radius: 15px;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+
+.modalComentario,
+.modalCadastrarComentario,
+.sucesso {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #cce2e2c6;
+
+
+}
+
+.modalComentarioVizualização {
+    border: 1px solid;
+    padding-right: 12vw;
+
+}
+
+.cadastrarEquipamento>div {
+    position: absolute;
+    height: 60vh;
+    width: 40vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    top: 10vh;
+    left: 14vw;
+}
+
+.modalComentario>div {
+    position: absolute;
+    height: 50vh;
+    width: 36vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    top: 15vh;
+    left: 15vw;
+    overflow-y: scroll;
+}
+
+.sucesso>div {
+    position: absolute;
+    height: 23vh;
+    width: 22vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    top: 26vh;
+    left: 25vw;
+}
+
+#Adicionar {
+    /* position: absolute; */
+    padding: 10px;
+    width: 12vw;
+    background-color: #44babc;
+    border: none;
+    color: #fff;
+    right: 24vw;
+    border-radius: 15px;
+    /* top: 50vh; */
+    cursor: pointer;
+}
+
+#premio {
+    height: 4vh;
+    width: 3vw;
+    margin-top: 6vh;
+    margin-bottom: -2vh;
+}
+
+#cliqueOK {
+    padding: 10px;
+    width: 8vw;
+    background-color: #44babc;
+    border: none;
+    color: #fff;
+    margin-right: 1vw;
+    border-radius: 15px;
+    margin-top: -2vh;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+
+#cadastrar {
+    position: absolute;
+    padding: 10px;
+    width: 12vw;
+    background-color: #808080;
+    border: none;
+    color: #fff;
+    right: 23vw;
+    border-radius: 15px;
+    top: 20vh;
+    cursor: pointer;
+}
+
+input {
+    width: 30vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#cadastrarEquipamento {
+    position: absolute;
+    padding: 10px;
+    width: 12vw;
+    background-color: #808080;
+    border: none;
+    color: #fff;
+    right: 23vw;
+    border-radius: 15px;
+    top: 44vh;
+    cursor: pointer;
+}
+
+.cadastrarEquipamento>div>div {
+    display: flex;
+    margin-right: 40vw;
+    margin-top: 1vh;
+}
+
+.cadastrarEquipamento>div>div>input {
+    margin-right: -14vw;
+    margin-top: -2px;
+}
+
+#erroEquipamento {
+    margin-top: -4vh;
+    margin-bottom: 1vh;
+}
+
+#Ativo {
+    height: 2vh;
+}
+
+.model {
+    display: none;
+    visibility: hidden;
+}

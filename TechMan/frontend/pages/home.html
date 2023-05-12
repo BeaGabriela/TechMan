@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="shortcut icon" href="../assets/techman.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body onload="carregar()">
+    <header>
+        <img src="../assets/techman.png" id="logo">
+        <div>
+            <h2 id='novoEquipamento' onclick="abrirModalCadastroEquipamento()"> Novo Equipamento</h2>
+            <img id='imgSair' src="../assets/logout_sair.png" onclick="logout()" />
+        </div>
+    </header>
+    <main>
+        <div class="equipamentos model">
+            <img id="img">
+            <div class="divTituloDescricao">
+                <h3 id="titulo"></h3>
+                <p id="descricao"></p>
+                <div>
+                    <img id="imgComentario" src="../assets/comentario.png" alt="comentario">
+                    <img id="imgDeletar" src="../assets/deletar.png">
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="cadastrarEquipamento model">
+            <div>
+                <p id="fecharComentario" onclick="fecharModalCadastro()">X</p>
+                <h2>Cadastro de equipamento</h2>
+                <input type="text" name="" id="nome" placeholder="Nome">
+                <input type="text" name="" id="imagem" placeholder="Endereço da Imagem">
+                <input type="text" name="" id="Idescricao" placeholder="Descrição">
+                <p id="erroEquipamento"></p>
+                <div>
+                    <input type="checkbox" id="Ativo" name="scales">
+                    <p for="ativo">Ativo</p>
+                </div>
+                <button id="cadastrarEquipamento" disabled>Cadastrar</button>
+            </div>
+
+        </nav>
+
+
+        <nav class="modalExclusão model">
+            <div>
+                <p id="fechar" onclick="fecharModal()">X</p>
+                <h2>Exclusão do Equipamento</h2>
+                <p>Atenção! Tem certeza que deseja excluir o equipamento? Essa ação não poderá ser desfeita.</p>
+                <button id="excluir">Excluir</button>
+            </div>
+        </nav>
+
+
+        <nav class="modalComentario model">
+            <p id="fecharComentario" onclick="fecharModalComentario()">X</p>
+            <h3 id="comentarioTexto">Comentários</h3>
+            <div class="modalComentarioVizualização">
+
+                <div class="comentariosV model ">
+                    <h3 id="perfil"></h3>
+                    <p id="comentario"></p>
+                </div>
+            </div>
+        </nav>
+
+
+        <nav class="modalCadastrarComentario model">
+            <div>
+                <p id="fechar" onclick="fecharModalNovoCadastro()">X</p>
+                <h2>Cadastro de comentários</h2>
+                <input type="text" id="newComentario" placeholder="Comentário">
+                <button id="cadastrar" disabled>Cadastrar</button>
+            </div>
+        </nav>
+
+        <nav class="sucesso model">
+            <div>
+                <img src="../assets/premio.gif" id="premio">
+                <p>Sucesso! Comentário cadastrado para o equipamento.</p>
+                <button id="cliqueOK">OK!</button>
+            </div>
+        </nav>
+
+    </main>
+</body>
+<script src="../script/home.js"></script>
+
+</html>
